@@ -9,7 +9,7 @@ const textArea = document.querySelector(".textArea");
 
 addNotes.addEventListener("click",()=>{
 
-    const createDiv = document.createElement("div");
+    const createNotes = document.createElement("div");
 
    createDiv.classList.add("note");
 
@@ -34,7 +34,7 @@ createDiv.querySelector(".fa-floppy-disk").addEventListener("click",()=>{
 
    const textareaValue = textArea.value;
 
-   localStorage.setItem("note",JSON.stringify(textareaValue));
+   localStorage.setItem(["note",JSON.stringify(textareaValue)]);
 })
 
 })
