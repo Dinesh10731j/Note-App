@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Playfair:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Playfair', serif;
+}
+
+body{
+    background: #535c68;
+}
+
+.user-notes{
+   
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+ .note{
+    margin-top:20px;
+    margin-left: 20px;
+    position: relative;
+    height:500px;
+    width: 600px;
+    background: #130f40;
+    border-radius: 5px;
+}
+
+.tools{
+    position: absolute;
+    width: 100%;
+    height:40px;
+   background: #30336b;
+   box-shadow: 0px 3px 10px rgba(0,0,0,0.40);
+   border-top-right-radius: 5px;
+   border-top-left-radius: 5px;
+}
+
+.tools .fa-trash{
+    position: absolute;
+    top:10px;
+    right:10px;
+    cursor: pointer;
+
+}
+.tools .fa-trash:hover{
+    color:tomato;
+}
+.tools .fa-floppy-disk{
+    position: absolute;
+    top:10px;
+    right:50px;
+    cursor: pointer;
+}
+
+.tools .fa-floppy-disk:hover{
+    color:rgba(0, 255, 0, 0.30)
+}
+
+.note textarea{
+position: absolute;
+width:100%;
+height:90%;
+top:50px;
+background: #130f40;
+outline: none;
+border: none;
+border-radius: 10px;
+font-size: 20px;
+padding: 15px;
+resize: none;
+color: white;
+}
+
+.addNotes{
+    position: absolute;
+    top:10px;
+    right:10px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    letter-spacing: 0.1em;
+    box-shadow:0px 3px 10px rgba(0,0,0,0.40);
+    background: #130f40;
+    color: white;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
