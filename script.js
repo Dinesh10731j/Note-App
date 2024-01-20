@@ -34,7 +34,7 @@ createDiv.querySelector(".fa-floppy-disk").addEventListener("click",()=>{
 
    const textareaValue = textArea.value;
 
-   localStorage.setItem(["note",JSON.stringify(textareaValue)]);
+   localStorage.setItem("note",[JSON.stringify(textareaValue)]);
 })
 
 })
